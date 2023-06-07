@@ -1,0 +1,2086 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    left: 0;
+}
+
+.hydrated {
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 444444;
+}
+
+header .ulheader,
+header .ulheader.active {
+    z-index: 4;
+}
+
+.lastdiv-ul-header {
+    display: none;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+}
+
+nav ul li {
+    font-size: 0.7rem;
+    margin: 0 1rem;
+    color: #000;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #000000c5;
+}
+
+.li5 {
+    color: #DB005B;
+}
+
+.li5:hover {
+    color: #DB005B;
+}
+
+.btns {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 4rem;
+}
+
+.btnLoginin button {
+    background-color: transparent;
+    border: 0;
+    margin-right: 1.5rem;
+    font-size: .7rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.btnLoginin button:hover {
+    color: #000000be;
+}
+
+.btnsignin button {
+    height: 44px;
+    font-size: 14px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+    font-size: .7rem;
+    background-color: rgb(247, 245, 245);
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.21s ease-in;
+}
+
+.btnsignin button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.lastbtn button {
+    background-color: #000;
+    height: 44px;
+    font-size: 10px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 0;
+    transition: 0.3s ease-in;
+    color: #fff;
+    cursor: pointer;
+}
+
+.lastbtn button:hover {
+    background-color: #2c2536;
+}
+
+.brand {
+    cursor: context-menu;
+}
+
+/* container-canvans */
+
+.container {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-canvans {
+    width: 100%;
+    height: 35rem;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    transition: 0.7 ease;
+    transition-delay: 0.7s;
+}
+
+.container-canvans.illisturation {
+    width: 100%;
+    height: 35rem;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    opacity: 100;
+    transition: 0.7 ease;
+    transition-delay: 0.7s;
+}
+
+/* branding-vedio */
+
+.container ul .brand-btn.branding {
+    background-color: #fff;
+}
+
+.container ul .brand-btn a.branding {
+    color: #000;
+}
+
+.branding-video {
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.branding-video video {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.branding-video video.branding {
+    position: absolute;
+    width: 100%;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+/* web-design */
+
+.container ul .web-design-btn.design {
+    background-color: #fff;
+}
+
+.container ul .web-design-btn a.design {
+    color: #000;
+}
+
+.web-design {
+    width: 100%;
+    height: 35rem;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+}
+
+.web-design video {
+    width: 100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.web-design video.design {
+    width: 100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+/* mobile-video */
+
+.mobile-video {
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+}
+
+.mobile-video video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.mobile-video video.mobo {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.container ul .mobile-btn.mobo {
+    background-color: #fff;
+}
+.container ul .mobile-btn a.mobo {
+    color: #000;
+}
+
+/* typography-video */
+
+.typography-video {
+    width: 100%;
+    height: 35rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+.typography-video video {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.typography-video video.typography {
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.container ul .typography-btn.typography {
+    background-color: #fff;
+}
+
+.container ul .typography-btn a.typography {
+    color: #000;
+}
+
+/* product-design-video */
+
+.product-design-video {
+    width: 100%;
+    height: 35rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+.product-design-video video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.product-design-video video.productDesign {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.container ul .product-design-btn.productDesign {
+    background-color: #fff;    
+}
+
+.container ul .product-design-btn a {
+    width: 100%;
+    text-align: center;
+}
+
+.container ul .product-design-btn a.productDesign {
+    color: #000;
+}
+
+/* sahdow-container */
+
+.sahdow-container {
+    background-color: #00000060;
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+}
+
+/*  */
+
+.max-width-li {
+    display: flex;
+    position: absolute;
+}
+
+.container ul::-webkit-scrollbar {
+    display: none;
+}
+
+.container ul li a {
+    position: absolute;
+}
+
+.container ul li {
+    position: relative;
+    height: 1.5rem;
+    padding: 0.7rem 5rem;
+    border-radius: 50px;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li a {
+    position: absolute;
+    margin: 0 0.5rem;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    font-weight: bold;    
+}
+
+.container ul li:hover a {
+    color: #000;
+}
+
+.container ul li:hover {
+    background-color: #fff;
+}
+
+.h1headercontainer {
+    text-align: center;
+    position: absolute;
+    top: 9rem;
+    color: #fff;
+}
+
+.h12headercontainer {
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    z-index: 2;
+    width: 80%;
+}
+
+.discover-vedio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+/* discover-btn */
+
+.container ul .discover-btn.active {
+    background-color: #fff;
+}
+
+.container ul .discover-btn a.active {
+    color: #000;
+}
+
+.discover-vedio  video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* animation-vedio */
+
+.animation-vedio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.animation-vedio video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.Animation-media-asset.animation {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.container ul .animation-btn.animation {
+    background-color: #fff;
+}
+
+.container ul .animation-btn a.animation {
+    color: #000;
+}
+
+
+/* hero-media-asset-Discover */
+
+.hero-media-asset {
+    opacity: 0;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.hero-media-asset.active {
+    opacity: 100;
+    transition: 0.7s ease;
+    transition-delay: 0.7s;
+}
+
+.ulcontainer {
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container ul {
+    position: absolute;
+    display: flex;
+    top: 2.5rem;
+    width: 100%;
+    height: 3.2rem;
+    left: 0;
+    justify-content: center;
+    overflow: scroll;
+}
+
+/* illustration-btn */
+
+.container ul .illustration-btn.illisturation {
+    background-color: #fff;
+}
+
+.container ul .illustration-btn a.illisturation {
+    color: #000;
+}
+
+/* last */
+
+#lastjob1 {
+    width: 100%;
+    height: 1.5rem;
+    background-color: transparent;
+    bottom: -2.5rem;
+    position: absolute;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: context-menu;    
+    cursor: pointer;
+}
+
+#lastjob1 i {
+    left: 0rem;
+    color: red;
+    position: absolute;
+}
+
+#lastjob1 h1 {
+    position: absolute;
+    font-size: 15px;
+    left: 1.5rem;
+}
+
+#lastjob1 ion-icon {
+    position: absolute;
+    right: 0rem;
+    font-size: 20px;
+    cursor: pointer;
+    color: #afafaf;
+    transition: 0.2s ease;
+}
+
+#lastjob1 ion-icon:hover {
+    position: absolute;
+    right: 0rem;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(175, 175, 175, 0.575);
+    transition: 0.2s ease;
+}
+
+#lastjob1 ion-icon.active {
+    position: absolute;
+    right: 0rem;
+    font-size: 21px;
+    cursor: pointer;
+    color: rgb(192, 0, 0);
+    transition: 0.2s ease;
+}
+
+/* search box */
+
+.put {
+    position: absolute;
+    width: 100%;
+    height: 78px;
+    top: 22.5rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.put form {
+    width: 600px;
+    height: 58px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    z-index: 22222;
+    transition: 0.4s ease;
+    transition-delay: 0.4s;
+}
+
+.put form.active {
+    transition: 0.4s ease;
+    width: 600px;
+    height: 58px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    display: flex;
+    box-shadow: 0px 0px 10px 1px #929292;
+    z-index: 22222;
+}
+
+.put form button {
+    width: 58px;
+    height: 58px;
+    border-radius: 50px 0 0 50px ;
+    border: 0;
+    border-color: transparent;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #706f6f;
+    z-index: 22222;
+}
+
+.put form input {
+    width: 542px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-radius: 0 50px 50px 0;
+    outline: navajowhite;
+    z-index: 22222;
+}
+
+.put form input:focus  .focus-form {
+    width: 630px;
+    height: 78px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    z-index: 22222;
+}
+
+.put .focus-form {
+    width: 590px;
+    height: 48px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    z-index: 1;
+    transition-delay: 0.4s;
+    z-index: 22222;
+}
+
+.put .focus-form.active {
+    width: 630px;
+    height: 78px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    z-index: 22222;
+}
+
+.choise-click-list-search-box {
+    position: absolute;
+    width: 630px;
+    height: 0rem;
+    top: 2rem;
+    z-index: 1;
+    border-radius: 0 0 40px 40px;
+    transition: 0.4s ease;
+    background-color: #fff;
+    z-index: 22222;
+}
+
+.choise-click-list-search-box.active {
+    position: absolute;
+    width: 630px;
+    height: 20rem;
+    top: 0rem;
+    z-index: 1;
+    border-radius: 40px;
+    transition: 0.4s ease;
+    transition-delay: 0.4s;
+    background-color: #e9e9e9;
+    z-index: 22222;
+}
+
+.shadow-body-search {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: #00000083;
+    display: none;
+}
+
+.shadow-body-search.active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: #00000083;
+    z-index: 2222;
+}
+
+/* product */
+
+.choise-click-list-search-box {
+    display: block;
+    overflow-x: hidden;
+}
+
+.choise-click-list-search-box::-webkit-scrollbar {
+    display: none;
+}
+
+.input-research::placeholder {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00000083;
+}
+
+.input-research {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000d5;
+}
+
+.product {
+    width: 100%;
+    position: relative;
+    left: 0rem;
+    display: flex;
+    align-items: center;
+    top: 5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-bottom: 0.1rem;
+}
+
+.product:hover {
+    background-color: #ea4c894f;
+}
+
+.product a {
+    color: #000;
+    position: absolute;
+    top: 0.45rem;
+    left: 1rem;
+}
+
+.product i {
+    position: absolute;
+    font-size: 20px;
+    color: #b3b3b3;
+    left: 0.5rem;
+}
+
+.product h1 {
+    position: absolute;
+    font-size: 17px;
+    left: 2rem;
+}
+
+.product ion-icon {
+    font-size: 10px;
+    background-color: red;
+}
+
+/* popular */
+
+.parent-popular {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 43rem;
+    left: 4.6rem;
+    width: 6.5rem;
+    height: 3.5rem;
+}
+
+.parent-popular div {
+    width: 5.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #cecdcd;
+    color: #797979;
+    cursor: context-menu;
+    border: 4px solid #ffb7d556;
+}
+
+.popular:hover {
+    border: 4px solid #ffb7d556;
+}
+
+/* container-jobs */
+
+.container-jobs {
+    position: absolute;
+    width: 95%;
+    height: 75rem;
+    top: 47rem;
+    display: block;
+    justify-content: center;
+}
+
+.container-jobs1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-jobs  {
+    width: 100%;
+}
+
+.container-jobs1 div {
+    position: relative;
+    width: 22%;
+    height: 309.56px;
+    background-color: #afafaf;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.hover-box {
+    content: '';
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(transparent , #00000071);
+    bottom: 0;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+    z-index: 111;
+    transition: 0.4s ease;
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.hover-box i {
+    color: #6e6e6e;
+    font-size: 15px;
+}
+
+.i-hover-box {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #fff;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.hover-box i:hover {
+    color: #7474748e;
+    position: absolute;
+}
+
+.hover-box h1 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    color: #fff;
+}
+
+.job1:hover .hover-box ,
+.job2:hover .hover-box ,
+.job3:hover .hover-box ,
+.job4:hover .hover-box ,
+.job5:hover .hover-box ,
+.job6:hover .hover-box ,
+.job7:hover .hover-box ,
+.job8:hover .hover-box ,
+.job9:hover .hover-box ,
+.job10:hover .hover-box ,
+.job11:hover .hover-box ,
+.job12:hover .hover-box {
+    opacity: 100;
+}
+
+.job1:hover .openlogo ,
+.job2:hover .openlogo ,
+.job3:hover .openlogo ,
+.job4:hover .openlogo ,
+.job5:hover .openlogo ,
+.job6:hover .openlogo ,
+.job7:hover .openlogo ,
+.job8:hover .openlogo ,
+.job9:hover .openlogo,
+.job10:hover .openlogo ,
+.job11:hover .openlogo ,
+.job12:hover .openlogo {
+    width: 5.5rem;
+}
+
+.openlogo {
+    position: absolute;
+    height: 1.5rem;
+    width: 5.5rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 1.5rem;
+    right: 1rem;
+    top: 1rem;
+    transition: 0.4s ease;
+}
+
+.openlogo i {
+    left: 0.14rem;
+    position: absolute;
+    color: #f00;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.openlogo h6 {
+    position: absolute;
+    left: 1.5rem;
+    font-size: 15px;
+    color: #000;
+}
+
+/* lastdiv */
+
+.lastdiv {
+    position: absolute;
+    top: 120rem;
+    width: 35rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-signup {
+    color: #fff;
+    background-color: #EA4C89;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 25px;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.btn-signin {
+    color: #EA4C89;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #ea4c89a8;
+}
+
+.btn-signin:hover{
+    color: #ea4c89a8;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    top: 126rem;
+    width: 100%;
+    height: 630px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    z-index: 444444;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+footer div {
+    display: flex;
+    font-size: 14px;
+}
+
+/* container-links */
+
+.container-links {
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+}
+
+.container-links i {
+    margin: 0 0.2rem;
+}
+
+.container-links div {
+    margin-left: 100px;
+}
+
+#brand-footer {
+    color: #EA4C89;
+    font-size: 40px;
+    margin: 0 0 1rem 0;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.brand-footer a {
+    color: #707070;
+}
+
+#brand-footer:hover {
+    color: #c03369;
+}
+
+.brand-footer {
+    display: block;
+    font-size: 17px;
+    margin: 0;
+}
+
+.brand-footer span {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    margin-Top: 1rem;
+}
+
+.sosial-links {
+    font-size: 1.5rem;
+    margin-left: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+footer ul li {
+    margin: 1rem 0;
+}
+
+footer ul li a {
+    font-size: 17px;
+    color: #6e6e6e;
+    cursor: pointer;
+}
+
+footer ul li a:hover , footer i:hover {
+    color: #1b1b1b6c;
+    cursor: pointer;
+}
+
+/* last-footer-div */
+
+.last-footer-div {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 7rem;
+    border-top: 1px solid #b1b1b1;
+    display: flex;
+    align-items: center;
+}
+
+.last-footer-div h6 {
+    font-size: 17px;
+    color: #000000ad;
+}
+
+/* icon-up */
+
+.icon-up {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(136, 136, 136);
+    font-size: 2rem;
+    border-radius: 50%;
+    right: 1rem;
+    bottom: 1rem;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 3;
+}
+
+.icon-up.active {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(136, 136, 136);
+    font-size: 2rem;
+    border-radius: 50%;
+    right: 1rem;
+    bottom: 1rem;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    position: fixed;  
+    opacity: 100;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.icon-up.absolute {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(136, 136, 136);
+    font-size: 2rem;
+    border-radius: 50%;
+    right: 1rem;
+    top: 122rem;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    opacity: 100;
+    cursor: pointer;
+}
+
+.icon-up:hover,
+.icon-up.active:hover,
+.icon-up.absolute:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+#container-culomn {
+    margin-right: 30px;
+}
+
+/* selection */
+
+::selection {
+    background-color: #EA4C89;
+}
+
+.job1 {
+    display: flex;
+}
+
+.job1 a ,
+.job2 a ,
+.job3 a ,
+.job4 a ,
+.job5 a ,
+.job6 a ,
+.job7 a ,
+.job8 a ,
+.job9 a ,
+.job10 a ,
+.job11 a ,
+.job12 a  {
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.job1 a img ,
+.job2 a img ,
+.job3 a img ,
+.job4 a img ,
+.job5 a img ,
+.job6 a img ,
+.job7 a img ,
+.job8 a img ,
+.job9 a img ,
+.job10 a img ,
+.job11 a img ,
+.job12 a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.job1 a img  {
+    width: 100%;
+    height: 100%;
+}
+
+.job1 a {
+    overflow: hidden;
+    position: absolute;
+    /* z-index: 111; */
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* bars */
+
+.bars {
+    display: none;
+}
+/*  */
+
+
+form span.heart-red {
+    color: rgb(218, 16, 16);
+}
+
+.heart-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart2-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart3-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart4-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart5-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart6-red {
+    color: rgb(218, 16, 16)red;
+    transition: 0.3s ease;
+}
+
+.heart7-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart8-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart9-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart10-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart11-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart12-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+.heart13-red {
+    color: rgb(218, 16, 16);
+    transition: 0.3s ease;
+}
+
+/* local storege */
+
+.body2 ,
+.body3 ,
+.body4 ,
+.body5 ,
+.body6 ,
+.body7 ,
+.body8 ,
+.body9 ,
+.body10 ,
+.body11 ,
+.body12 ,
+.body13 {
+    height: 2rem;
+    width: 1rem;
+    position: absolute;
+    z-index: 11;
+    background-color: transparent;
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0.5rem;
+}
+
+
+/* responsive */
+
+@media (max-width: 1600px) {
+    .container-links div {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1500px) {
+
+    #res {
+        display: none;
+    }
+
+    .container-jobs1 div {
+        width: 30%;
+    }
+
+    .jobs1 , .jobs2 {
+        background-color: red;
+    }
+}
+
+@media (max-width: 1332px) {
+
+    .max-width-li {
+        left: 0;
+    }
+
+}
+@media (max-width: 1110px) {
+
+    nav {
+        background-color: red;
+        width: 100%;
+    }
+
+    .btnsignin , .btnLoginin {
+        display: none;
+    }
+
+    .brand {
+        position: absolute;
+        left: 5rem;
+    }
+
+    .ulheader {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        width: 0;
+        height: 18rem;
+        border-top: 1px solid #c4c4c4;
+        opacity: 0;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .ulheader.active {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 18rem;
+        border-top: 1px solid #dbdbdb;
+        opacity: 100;
+        transition: 0.2s ease-in-out;
+    }
+
+    header ul li {
+        width: 8rem;
+        margin: 2rem;
+    }
+
+    header ul li {
+        width: 8rem;
+        margin: 1rem 2rem;
+    }
+    
+    .li1{
+        transform: translateX(-10rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li1.active{
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li2{
+        transform: translateX(-13rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li2.active{
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li3{
+        transform: translateX(-14rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li3.active{
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li4{
+        transform: translateX(-15rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li4.active{
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li5{
+        transform: translateX(-16rem);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .li5.active{
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+
+    .lastdiv-ul-header {
+        display: flex;
+        width: 90%;
+        font-size: 17px;
+    }
+
+    .lastdiv-ul-header h1 {
+        margin-top: 1rem;
+    }
+
+    .li-last-div-header {
+        transform: translateX(-20rem);
+        transition: 0.2s ease-in-out;
+    }
+    .li-last-div-header.active {
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+
+    .lastbtn button {
+        transform: translateX(2.5rem);
+    }
+    
+    .border {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-17rem);
+        transition: 0.2s ease-in-out;
+    }
+
+    .border.active {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(0rem);
+        transition: 0.2s ease-in-out;
+    }
+
+    #border {
+        width: 94%;
+        border-top: 1px solid #dbdbdb;
+    }
+    
+    header ul li h1 {
+        font-size: 17px;
+    }
+
+    .bars {
+        position: absolute;
+        left: 2rem;
+        width: 1.5rem;
+        height: 1rem;
+        display: flex;
+    }
+
+    /* shadow-list-bars-active */
+
+    .shadow-list-bars-active {
+        width: 100%;
+        height: 250%;
+        background-color: #00000086;
+        z-index: 44444;
+        position: absolute;
+        display: none;
+    }
+
+    .shadow-list-bars-active.active {
+        width: 100%;
+        height: 150rem;
+        background-color: #00000086;
+        z-index: 44444;
+        position: absolute;
+        display: flex;
+    }
+
+    .div1 {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 20px;
+        background-color: #000;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .div1.active {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        border-radius: 20px;
+        background-color: #000;
+        transform: rotate(45deg);
+        transform-origin: left;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .div2 {
+        position: absolute;
+        top: 8px;
+        width: 100%;
+        height: 2px;
+        border-radius: 20px;
+        background-color: #000;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .div2.active {
+        position: absolute;
+        top: 8px;
+        width: 0;
+        height: 0;
+        border-radius: 20px;
+        background-color: #000;
+        transform: rotate(45deg);
+        transition: 0.2s ease-in-out;
+    }
+    
+    .div3 {
+        position: absolute;
+        width: 60%;
+        height: 2px;
+        top: 16px;
+        border-radius: 20px;
+        background-color: #000;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .div3.active {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 16px;
+        border-radius: 20px;
+        background-color: #000;
+        transform: rotate(-45deg);
+        transform-origin: left;
+        transition: 0.2s ease-in-out;
+    }
+
+    header ul li {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    
+    #res2 {
+        display: none;
+    }
+    
+    .container-jobs1 div {
+        width: 40%;
+    }
+
+    .jobs1 , .jobs2 {
+        background-color: red;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container-links div {
+        margin-left: 50px;
+    }
+
+    .ulcontainer ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 866px) {
+    .container-links div {
+        margin-left: 30px;
+    }
+    
+    .last-footer-div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .discover-vedio video.active,
+    .animation-vedio video.animation,
+    .branding-vedio video.branding,
+    .web-design video.webDesign ,
+    .mobile-vedio video.mobo,
+    .typography-vedio video.typography,
+    .product-design-vedio video.active,
+    .discover-vedio video,
+    .animation-vedio video,
+    .branding-vedio video,
+    .web-design video,
+    .mobile-vedio video,
+    .typography-vedio video,
+    .product-design-vedio video {
+        height: 35rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 715px) {
+
+    .sahdow-container , 
+    .p-canvas-webgl , 
+    .discover-vedio , 
+    .animation-vedio , 
+    .branding-video , 
+    .web-design , 
+    .mobile-video , 
+    .typography-video , 
+    .product-design-video , 
+    .container {
+        height: 32.5rem;
+    }
+
+    .icon-up.active ,
+    .icon-up.absolute ,
+    .icon-up {
+        display: none;
+    }
+
+    /* search box */
+    
+    .put form.active,
+    .put form {
+        width: 450px;
+        height: 50px;
+    }
+    
+    .put form button {
+        height: 50px;
+    }
+    
+    .put form input {
+        width: 400px;
+    }
+    
+    .put .focus-form {
+        width: 450px;
+    }
+    
+    .put .focus-form.active {
+        width: 470px;
+        height: 70px;
+    }
+    
+    .choise-click-list-search-box,
+    .choise-click-list-search-box.active {
+        width: 470px;
+        top: 2rem;
+        border-radius: 0 0 30px 30px ;
+    }
+    
+    .product {
+        top: 0.7rem;
+    }
+    
+    /* /search box */
+
+    .h1headercontainer {
+        font-size: 30px;
+    }
+    
+    .h12headercontainer {
+        font-size: 17px;
+    }
+
+    .container-jobs {
+        top: 45rem;
+    }
+
+    .container-jobs div div {
+        width: 30rem;
+    }
+    
+    .parent-popular {
+        top: 41rem;
+        left: 2.2rem;
+    }
+
+    .container-jobs1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .container-jobs1 div {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    #res , #res2 {
+        display: flex;
+    }
+
+    footer {
+        top: 315rem;
+        height: 100rem;
+    }
+
+    .lastdiv {
+        top: 309rem;
+    }
+
+    .container-links {
+        display: block;
+    }
+
+    .container-links div {
+        margin-bottom: 2rem;
+    }
+
+    .container-links div li {
+        margin: 0.5rem 0;
+    }
+
+    #lastjob1 {
+        bottom: -3.5rem;
+    }
+
+    .container ul li {
+        height: 1.5rem;
+        padding: 0.5rem 4rem;
+        margin: 0 0.3rem;
+    }
+    
+    .container ul li a {
+        font-size: 17px;
+    }
+
+    /* shadow-bars */
+
+    .shadow-list-bars-active.active ,
+    .shadow-list-bars-active {
+        height: 350rem;
+    }
+
+}
+
+@media (max-width:677px) {
+
+    .animation-vedio video.animation,
+    .animation-vedio video {
+        height: 32rem;
+        width: auto;
+    }
+
+    .container-canvans,
+    .container-canvans.illisturation {
+        height: 480px;
+        width: 100%;
+    }
+
+    .discover-vedio video,
+    .animation-vedio video, 
+    .branding-video video, 
+    .web-design video, 
+    .mobile-video video, 
+    .typography-video video, 
+    .product-design-video video, 
+    .container-canvans video,
+    .discover-vedio video.active,
+    .container-canvans video.illisturation,
+    .animation-vedio video.animation, 
+    .branding-video video.branding, 
+    .web-design video.design, 
+    .mobile-video video.mobo,
+    .typography-video video.typography, 
+    .product-design-video video.productDesign {
+        height: 32rem;
+        width: auto;
+    }
+    
+    .container {
+        height: 32rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:600px) {
+    
+    .sahdow-container , 
+    .p-canvas-webgl , 
+    .discover-vedio , 
+    .animation-vedio , 
+    .branding-video , 
+    .web-design , 
+    .mobile-video , 
+    .typography-video , 
+    .product-design-video , 
+    .container {
+        height: 30rem;
+    }
+    
+    .put {
+        top: 20rem;
+    }
+
+    .put form {
+        width: 400px;
+        height: 45px;
+    }
+    
+    .put form button {
+        height: 45px;
+    }
+    
+    .put form input {
+        width: 400px;
+    }
+    
+    .container-jobs div div {
+        width: 90%;
+    }
+
+    .h12headercontainer {
+        position: absolute;
+        top: 15rem;
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width:490px) {
+
+    /* search-box */
+    
+
+    .put form.active,
+    .put form {
+        width: 400px;
+        height: 50px;
+    }
+    
+    .put form button {
+        height: 50px;
+    }
+    
+    .put form input {
+        width: 400px;
+    }
+    
+    .put .focus-form {
+        width: 400px;
+    }
+    
+    .put .focus-form.active {
+        width: 420px;
+        height: 70px;
+    }
+    
+    .choise-click-list-search-box,
+    .choise-click-list-search-box.active {
+        width: 420px;
+        top: 2rem;
+        border-radius: 0 0 30px 30px ;
+    }
+    
+    .product {
+        top: 0.5rem;
+    }
+
+
+    /* /search-box */
+
+
+}
+@media (max-width:450px) {
+
+    /* search-box */
+
+    .put form.active,
+    .put form {
+        width: 370px;
+        height: 50px;
+    }
+    
+    .put form button {
+        height: 50px;
+    }
+    
+    .put form input {
+        width: 370px;
+    }
+    
+    .put .focus-form {
+        width: 370px;
+    }
+    
+    .put .focus-form.active {
+        width: 390px;
+        height: 70px;
+    }
+    
+    .choise-click-list-search-box,
+    .choise-click-list-search-box.active {
+        width: 390px;
+        top: 2rem;
+        border-radius: 0 0 30px 30px ;
+    }
+    
+    .product {
+        top: 0.4rem;
+    }
+
+    /* /search-box */
+}
+
+
+@media (max-width:410px) {
+
+    .h12headercontainer span {
+        display: none;
+    }
+
+    body ,html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-jobs div div {
+        width: 90%;
+        height: 270px;
+    }
+
+    .lastdiv {
+        top: 280rem;
+    }
+
+    footer {
+        top: 285rem;
+        height: 1460px;
+    }
+
+    .last-footer-div {
+        height: 4rem;
+    }
+
+    /* search-box */
+
+    .put form.active,
+    .put form {
+        width: 350px;
+        height: 40px;
+    }
+    
+    .put form button {
+        height: 40px;
+    }
+    
+    .put form input {
+        width: 350px;
+    }
+    
+    .put .focus-form {
+        width: 350px;
+    }
+    
+    .put .focus-form.active {
+        width: 370px;
+        height: 60px;
+    }
+    
+    .choise-click-list-search-box,
+    .choise-click-list-search-box.active {
+        width: 370px;
+        top: 2rem;
+        border-radius: 0 0 30px 30px ;
+    }
+    
+    .product {
+        top: 0rem;
+    }
+
+    .h12headercontainer {
+        position: absolute;
+        top: 15rem;
+        font-size: 15px;
+    }
+}
